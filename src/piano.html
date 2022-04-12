@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wanna Play Piano?</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="piano">
+            <div class="key white">
+                <audio src="../assets/audio/C4.mp3" type="audio/mp3" id="C"></audio>
+            </div>
+            <div class="key black">
+                <audio src="../assets/audio/Db4.mp3" type="audio/mp3" id="C#"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/D4.mp3" type="audio/mp3" id="D"></audio>
+            </div>
+            <div class="key black">
+                <audio src="../assets/audio/Eb4.mp3" type="audio/mp3" id="D#"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/E4.mp3" type="audio/mp3" id="E"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/F4.mp3" type="audio/mp3" id="F"></audio>
+            </div>
+            <div class="key black">
+                <audio src="../assets/audio/Gb4.mp3" type="audio/mp3" id="F#"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/G4.mp3" type="audio/mp3" id="G"></audio>
+            </div>
+            <div class="key black">
+                <audio src="../assets/audio/Ab4.mp3" type="audio/mp3" id="G#"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/A4.mp3" type="audio/mp3" id="A"></audio>
+            </div>
+            <div class="key black">
+                <audio src="../assets/audio/Bb4.mp3" type="audio/mp3" id="A#"></audio>
+            </div>
+            <div class="key white">
+                <audio src="../assets/audio/B4.mp3" type="audio/mp3" id="B"></audio>
+            </div>
+        </div>
+    </body>
+    <script>
+        (function init() {
+            document.querySelector('.piano').addEventListener('mousedown', playAudio);
+        })();
+        function playAudio(evt) {
+            let audio = evt.target.children[0];
+            audio.currentTime = 0
+            audio.play();
+        }
+    </script>
+</html>
