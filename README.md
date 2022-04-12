@@ -14,4 +14,4 @@
 - Make it responsive for use on smaller devices
 
 
-You can see the [application in action and play with the paino here](https://rjakshayjain13.github.io/piano/src/piano.html).
+You can see the [application in action and play with the paino here](https://tulasitellakula.github.io/Keyboard_Piano/src/piano.html).
